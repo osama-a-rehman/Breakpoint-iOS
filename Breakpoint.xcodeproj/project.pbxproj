@@ -7,21 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A16A8C01FD4706A00718D3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A16A8BF1FD4706A00718D3A /* GoogleService-Info.plist */; };
+		4A4B65EB1FE4DC0F009C5015 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4B65E41FE4DC0F009C5015 /* FirebaseAnalytics.framework */; };
+		4A4B65EC1FE4DC0F009C5015 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4B65E51FE4DC0F009C5015 /* FirebaseCore.framework */; };
+		4A4B65ED1FE4DC0F009C5015 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4B65E61FE4DC0F009C5015 /* FirebaseCoreDiagnostics.framework */; };
+		4A4B65EE1FE4DC0F009C5015 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4B65E71FE4DC0F009C5015 /* FirebaseInstanceID.framework */; };
+		4A4B65EF1FE4DC0F009C5015 /* FirebaseNanoPB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4B65E81FE4DC0F009C5015 /* FirebaseNanoPB.framework */; };
+		4A4B65F01FE4DC0F009C5015 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4B65E91FE4DC0F009C5015 /* GoogleToolboxForMac.framework */; };
+		4A4B65F11FE4DC0F009C5015 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4B65EA1FE4DC0F009C5015 /* nanopb.framework */; };
+		4A4B65F41FE4DC17009C5015 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4B65F21FE4DC17009C5015 /* FirebaseDatabase.framework */; };
+		4A4B65F51FE4DC17009C5015 /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4B65F31FE4DC17009C5015 /* leveldb-library.framework */; };
+		4A4B65F81FE4DC20009C5015 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4B65F61FE4DC20009C5015 /* FirebaseAuth.framework */; };
+		4A4B65F91FE4DC20009C5015 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4B65F71FE4DC20009C5015 /* GTMSessionFetcher.framework */; };
+		4A4B65FC1FE4E062009C5015 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B65FB1FE4E062009C5015 /* LoginVC.swift */; };
+		4A4B65FE1FE4E06E009C5015 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B65FD1FE4E06E009C5015 /* AuthVC.swift */; };
+		4A8229111FDA9CEF002D3B59 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8229101FDA9CEF002D3B59 /* DataService.swift */; };
 		4A8E9D721FD46C05003DA857 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9D711FD46C05003DA857 /* AppDelegate.swift */; };
-		4A8E9D741FD46C05003DA857 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9D731FD46C05003DA857 /* ViewController.swift */; };
 		4A8E9D771FD46C05003DA857 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A8E9D751FD46C05003DA857 /* Main.storyboard */; };
 		4A8E9D791FD46C05003DA857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A8E9D781FD46C05003DA857 /* Assets.xcassets */; };
 		4A8E9D7C1FD46C05003DA857 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A8E9D7A1FD46C05003DA857 /* LaunchScreen.storyboard */; };
+		4A8E9D871FD46C80003DA857 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9D861FD46C80003DA857 /* FirstVC.swift */; };
+		4A8E9D891FD46C9B003DA857 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9D881FD46C9B003DA857 /* SecondVC.swift */; };
+		4AD52F461FE55DB20014079A /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52F451FE55DB20014079A /* InsetTextField.swift */; };
+		4AD52F481FE560EE0014079A /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52F471FE560EE0014079A /* ShadowView.swift */; };
+		4AD52F4A1FE5627C0014079A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52F491FE5627C0014079A /* AuthService.swift */; };
+		4AD52F4E1FE564970014079A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52F4D1FE564970014079A /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A16A8BF1FD4706A00718D3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4A4B65E41FE4DC0F009C5015 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		4A4B65E51FE4DC0F009C5015 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
+		4A4B65E61FE4DC0F009C5015 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		4A4B65E71FE4DC0F009C5015 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		4A4B65E81FE4DC0F009C5015 /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		4A4B65E91FE4DC0F009C5015 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = "<group>"; };
+		4A4B65EA1FE4DC0F009C5015 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
+		4A4B65F21FE4DC17009C5015 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = "<group>"; };
+		4A4B65F31FE4DC17009C5015 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "leveldb-library.framework"; sourceTree = "<group>"; };
+		4A4B65F61FE4DC20009C5015 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = "<group>"; };
+		4A4B65F71FE4DC20009C5015 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = "<group>"; };
+		4A4B65FA1FE4DC27009C5015 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		4A4B65FB1FE4E062009C5015 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		4A4B65FD1FE4E06E009C5015 /* AuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		4A8229101FDA9CEF002D3B59 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		4A8E9D6E1FD46C05003DA857 /* Breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A8E9D711FD46C05003DA857 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A8E9D731FD46C05003DA857 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4A8E9D761FD46C05003DA857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A8E9D781FD46C05003DA857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A8E9D7B1FD46C05003DA857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A8E9D7D1FD46C05003DA857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A8E9D861FD46C80003DA857 /* FirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		4A8E9D881FD46C9B003DA857 /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		4AD52F451FE55DB20014079A /* InsetTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		4AD52F471FE560EE0014079A /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		4AD52F491FE5627C0014079A /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		4AD52F4D1FE564970014079A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,12 +70,58 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A4B65ED1FE4DC0F009C5015 /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				4A4B65F91FE4DC20009C5015 /* GTMSessionFetcher.framework in Frameworks */,
+				4A4B65EC1FE4DC0F009C5015 /* FirebaseCore.framework in Frameworks */,
+				4A4B65EF1FE4DC0F009C5015 /* FirebaseNanoPB.framework in Frameworks */,
+				4A4B65F11FE4DC0F009C5015 /* nanopb.framework in Frameworks */,
+				4A4B65F41FE4DC17009C5015 /* FirebaseDatabase.framework in Frameworks */,
+				4A4B65F51FE4DC17009C5015 /* leveldb-library.framework in Frameworks */,
+				4A4B65F01FE4DC0F009C5015 /* GoogleToolboxForMac.framework in Frameworks */,
+				4A4B65F81FE4DC20009C5015 /* FirebaseAuth.framework in Frameworks */,
+				4A4B65EB1FE4DC0F009C5015 /* FirebaseAnalytics.framework in Frameworks */,
+				4A4B65EE1FE4DC0F009C5015 /* FirebaseInstanceID.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A4B65CC1FE4DAB1009C5015 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A4B65FA1FE4DC27009C5015 /* module.modulemap */,
+				4A4B65F61FE4DC20009C5015 /* FirebaseAuth.framework */,
+				4A4B65F71FE4DC20009C5015 /* GTMSessionFetcher.framework */,
+				4A4B65F21FE4DC17009C5015 /* FirebaseDatabase.framework */,
+				4A4B65F31FE4DC17009C5015 /* leveldb-library.framework */,
+				4A4B65E41FE4DC0F009C5015 /* FirebaseAnalytics.framework */,
+				4A4B65E51FE4DC0F009C5015 /* FirebaseCore.framework */,
+				4A4B65E61FE4DC0F009C5015 /* FirebaseCoreDiagnostics.framework */,
+				4A4B65E71FE4DC0F009C5015 /* FirebaseInstanceID.framework */,
+				4A4B65E81FE4DC0F009C5015 /* FirebaseNanoPB.framework */,
+				4A4B65E91FE4DC0F009C5015 /* GoogleToolboxForMac.framework */,
+				4A4B65EA1FE4DC0F009C5015 /* nanopb.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A82290E1FDA9CDB002D3B59 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		4A82290F1FDA9CE0002D3B59 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4A8229101FDA9CEF002D3B59 /* DataService.swift */,
+				4AD52F491FE5627C0014079A /* AuthService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		4A8E9D651FD46C04003DA857 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +141,56 @@
 		4A8E9D701FD46C05003DA857 /* Breakpoint */ = {
 			isa = PBXGroup;
 			children = (
+				4AD52F4C1FE5648C0014079A /* Utilities */,
+				4A4B65CC1FE4DAB1009C5015 /* Frameworks */,
+				4A82290F1FDA9CE0002D3B59 /* Services */,
+				4A82290E1FDA9CDB002D3B59 /* Extensions */,
+				4A8E9D851FD46C5E003DA857 /* Model */,
+				4A8E9D841FD46C55003DA857 /* View */,
+				4A8E9D831FD46C4F003DA857 /* Controller */,
 				4A8E9D711FD46C05003DA857 /* AppDelegate.swift */,
-				4A8E9D731FD46C05003DA857 /* ViewController.swift */,
 				4A8E9D751FD46C05003DA857 /* Main.storyboard */,
 				4A8E9D781FD46C05003DA857 /* Assets.xcassets */,
 				4A8E9D7A1FD46C05003DA857 /* LaunchScreen.storyboard */,
 				4A8E9D7D1FD46C05003DA857 /* Info.plist */,
+				4A16A8BF1FD4706A00718D3A /* GoogleService-Info.plist */,
 			);
 			path = Breakpoint;
+			sourceTree = "<group>";
+		};
+		4A8E9D831FD46C4F003DA857 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A8E9D861FD46C80003DA857 /* FirstVC.swift */,
+				4A8E9D881FD46C9B003DA857 /* SecondVC.swift */,
+				4A4B65FB1FE4E062009C5015 /* LoginVC.swift */,
+				4A4B65FD1FE4E06E009C5015 /* AuthVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4A8E9D841FD46C55003DA857 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4AD52F451FE55DB20014079A /* InsetTextField.swift */,
+				4AD52F471FE560EE0014079A /* ShadowView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4A8E9D851FD46C5E003DA857 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4AD52F4C1FE5648C0014079A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4AD52F4D1FE564970014079A /* Constants.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A8E9D7C1FD46C05003DA857 /* LaunchScreen.storyboard in Resources */,
+				4A16A8C01FD4706A00718D3A /* GoogleService-Info.plist in Resources */,
 				4A8E9D791FD46C05003DA857 /* Assets.xcassets in Resources */,
 				4A8E9D771FD46C05003DA857 /* Main.storyboard in Resources */,
 			);
@@ -136,8 +266,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A8E9D741FD46C05003DA857 /* ViewController.swift in Sources */,
+				4A4B65FE1FE4E06E009C5015 /* AuthVC.swift in Sources */,
 				4A8E9D721FD46C05003DA857 /* AppDelegate.swift in Sources */,
+				4A8E9D891FD46C9B003DA857 /* SecondVC.swift in Sources */,
+				4AD52F4A1FE5627C0014079A /* AuthService.swift in Sources */,
+				4A8E9D871FD46C80003DA857 /* FirstVC.swift in Sources */,
+				4AD52F4E1FE564970014079A /* Constants.swift in Sources */,
+				4AD52F481FE560EE0014079A /* ShadowView.swift in Sources */,
+				4A8229111FDA9CEF002D3B59 /* DataService.swift in Sources */,
+				4AD52F461FE55DB20014079A /* InsetTextField.swift in Sources */,
+				4A4B65FC1FE4E062009C5015 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,8 +398,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Breakpoint",
+				);
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/Frameworks/";
 				INFOPLIST_FILE = Breakpoint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.osama.Breakpoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -272,8 +416,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Breakpoint",
+				);
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/Frameworks/";
 				INFOPLIST_FILE = Breakpoint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.osama.Breakpoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -299,6 +449,7 @@
 				4A8E9D821FD46C05003DA857 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
