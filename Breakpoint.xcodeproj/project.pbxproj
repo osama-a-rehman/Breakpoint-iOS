@@ -26,12 +26,15 @@
 		4A8E9D771FD46C05003DA857 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A8E9D751FD46C05003DA857 /* Main.storyboard */; };
 		4A8E9D791FD46C05003DA857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A8E9D781FD46C05003DA857 /* Assets.xcassets */; };
 		4A8E9D7C1FD46C05003DA857 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A8E9D7A1FD46C05003DA857 /* LaunchScreen.storyboard */; };
-		4A8E9D871FD46C80003DA857 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9D861FD46C80003DA857 /* FirstVC.swift */; };
-		4A8E9D891FD46C9B003DA857 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9D881FD46C9B003DA857 /* SecondVC.swift */; };
+		4A8E9D871FD46C80003DA857 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9D861FD46C80003DA857 /* FeedVC.swift */; };
+		4A8E9D891FD46C9B003DA857 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E9D881FD46C9B003DA857 /* GroupsVC.swift */; };
 		4AD52F461FE55DB20014079A /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52F451FE55DB20014079A /* InsetTextField.swift */; };
 		4AD52F481FE560EE0014079A /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52F471FE560EE0014079A /* ShadowView.swift */; };
 		4AD52F4A1FE5627C0014079A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52F491FE5627C0014079A /* AuthService.swift */; };
 		4AD52F4E1FE564970014079A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52F4D1FE564970014079A /* Constants.swift */; };
+		4AFE2CAC1FE681EA00B29BC4 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFE2CAB1FE681EA00B29BC4 /* ProfileVC.swift */; };
+		4AFE2CAE1FE6856400B29BC4 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFE2CAD1FE6856400B29BC4 /* BorderedButton.swift */; };
+		4AFE2CB01FE688F700B29BC4 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFE2CAF1FE688F700B29BC4 /* CreatePostVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,12 +60,15 @@
 		4A8E9D781FD46C05003DA857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A8E9D7B1FD46C05003DA857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A8E9D7D1FD46C05003DA857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A8E9D861FD46C80003DA857 /* FirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
-		4A8E9D881FD46C9B003DA857 /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		4A8E9D861FD46C80003DA857 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		4A8E9D881FD46C9B003DA857 /* GroupsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
 		4AD52F451FE55DB20014079A /* InsetTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		4AD52F471FE560EE0014079A /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		4AD52F491FE5627C0014079A /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		4AD52F4D1FE564970014079A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4AFE2CAB1FE681EA00B29BC4 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		4AFE2CAD1FE6856400B29BC4 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		4AFE2CAF1FE688F700B29BC4 /* CreatePostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,10 +167,12 @@
 		4A8E9D831FD46C4F003DA857 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4A8E9D861FD46C80003DA857 /* FirstVC.swift */,
-				4A8E9D881FD46C9B003DA857 /* SecondVC.swift */,
+				4A8E9D861FD46C80003DA857 /* FeedVC.swift */,
+				4A8E9D881FD46C9B003DA857 /* GroupsVC.swift */,
 				4A4B65FB1FE4E062009C5015 /* LoginVC.swift */,
 				4A4B65FD1FE4E06E009C5015 /* AuthVC.swift */,
+				4AFE2CAB1FE681EA00B29BC4 /* ProfileVC.swift */,
+				4AFE2CAF1FE688F700B29BC4 /* CreatePostVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -174,6 +182,7 @@
 			children = (
 				4AD52F451FE55DB20014079A /* InsetTextField.swift */,
 				4AD52F471FE560EE0014079A /* ShadowView.swift */,
+				4AFE2CAD1FE6856400B29BC4 /* BorderedButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -268,13 +277,16 @@
 			files = (
 				4A4B65FE1FE4E06E009C5015 /* AuthVC.swift in Sources */,
 				4A8E9D721FD46C05003DA857 /* AppDelegate.swift in Sources */,
-				4A8E9D891FD46C9B003DA857 /* SecondVC.swift in Sources */,
+				4AFE2CB01FE688F700B29BC4 /* CreatePostVC.swift in Sources */,
+				4AFE2CAE1FE6856400B29BC4 /* BorderedButton.swift in Sources */,
+				4A8E9D891FD46C9B003DA857 /* GroupsVC.swift in Sources */,
 				4AD52F4A1FE5627C0014079A /* AuthService.swift in Sources */,
-				4A8E9D871FD46C80003DA857 /* FirstVC.swift in Sources */,
+				4A8E9D871FD46C80003DA857 /* FeedVC.swift in Sources */,
 				4AD52F4E1FE564970014079A /* Constants.swift in Sources */,
 				4AD52F481FE560EE0014079A /* ShadowView.swift in Sources */,
 				4A8229111FDA9CEF002D3B59 /* DataService.swift in Sources */,
 				4AD52F461FE55DB20014079A /* InsetTextField.swift in Sources */,
+				4AFE2CAC1FE681EA00B29BC4 /* ProfileVC.swift in Sources */,
 				4A4B65FC1FE4E062009C5015 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

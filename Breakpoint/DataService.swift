@@ -38,4 +38,17 @@ class DataService {
     func createNewUser(uid: String, userData: Dictionary<String, Any>){
        REF_USERS.child(uid).updateChildValues(userData)
     }
+    
+    func createPost(withMessage message: String, forUID uid: String, withGroupKey groupKey: String?, completion: @escaping PostCompletionHandler){
+        
+        if groupKey != nil {
+            // manage group reference
+        }else{
+            let feedData = [MESSAGE_KEY: message, UID_KEY: uid]
+            
+            REF_FEEDS.childByAutoId().updateChildValues(feedData)
+            
+            completion(true)
+        }
+    }
 }
