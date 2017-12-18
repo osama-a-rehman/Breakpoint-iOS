@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4A1460291FE7FEBF0058BFCB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1460281FE7FEBF0058BFCB /* Message.swift */; };
 		4A14602B1FE804980058BFCB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14602A1FE804980058BFCB /* FeedCell.swift */; };
+		4A14602D1FE8125F0058BFCB /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14602C1FE8125F0058BFCB /* CreateGroupVC.swift */; };
+		4A14602F1FE814BD0058BFCB /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14602E1FE814BD0058BFCB /* UserCell.swift */; };
 		4A16A8C01FD4706A00718D3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A16A8BF1FD4706A00718D3A /* GoogleService-Info.plist */; };
 		4A3C84A11FE7D56800977A1C /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C84A01FE7D56800977A1C /* UIViewExt.swift */; };
 		4A4B65EB1FE4DC0F009C5015 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4B65E41FE4DC0F009C5015 /* FirebaseAnalytics.framework */; };
@@ -43,6 +45,8 @@
 /* Begin PBXFileReference section */
 		4A1460281FE7FEBF0058BFCB /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		4A14602A1FE804980058BFCB /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		4A14602C1FE8125F0058BFCB /* CreateGroupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
+		4A14602E1FE814BD0058BFCB /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		4A16A8BF1FD4706A00718D3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4A3C84A01FE7D56800977A1C /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		4A4B65E41FE4DC0F009C5015 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 				4A4B65FD1FE4E06E009C5015 /* AuthVC.swift */,
 				4AFE2CAB1FE681EA00B29BC4 /* ProfileVC.swift */,
 				4AFE2CAF1FE688F700B29BC4 /* CreatePostVC.swift */,
+				4A14602C1FE8125F0058BFCB /* CreateGroupVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 				4AD52F471FE560EE0014079A /* ShadowView.swift */,
 				4AFE2CAD1FE6856400B29BC4 /* BorderedButton.swift */,
 				4A14602A1FE804980058BFCB /* FeedCell.swift */,
+				4A14602E1FE814BD0058BFCB /* UserCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -289,6 +295,7 @@
 				4A8E9D721FD46C05003DA857 /* AppDelegate.swift in Sources */,
 				4AFE2CB01FE688F700B29BC4 /* CreatePostVC.swift in Sources */,
 				4AFE2CAE1FE6856400B29BC4 /* BorderedButton.swift in Sources */,
+				4A14602D1FE8125F0058BFCB /* CreateGroupVC.swift in Sources */,
 				4A8E9D891FD46C9B003DA857 /* GroupsVC.swift in Sources */,
 				4AD52F4A1FE5627C0014079A /* AuthService.swift in Sources */,
 				4A8E9D871FD46C80003DA857 /* FeedVC.swift in Sources */,
@@ -297,6 +304,7 @@
 				4A8229111FDA9CEF002D3B59 /* DataService.swift in Sources */,
 				4AD52F461FE55DB20014079A /* InsetTextField.swift in Sources */,
 				4A1460291FE7FEBF0058BFCB /* Message.swift in Sources */,
+				4A14602F1FE814BD0058BFCB /* UserCell.swift in Sources */,
 				4A14602B1FE804980058BFCB /* FeedCell.swift in Sources */,
 				4AFE2CAC1FE681EA00B29BC4 /* ProfileVC.swift in Sources */,
 				4A4B65FC1FE4E062009C5015 /* LoginVC.swift in Sources */,

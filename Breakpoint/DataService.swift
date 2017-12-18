@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import FirebaseAuth
 import FirebaseDatabase
 
 let DB_BASE = Database.database().reference()
@@ -91,6 +92,28 @@ class DataService {
                     return
                 }
             }
+        })
+    }
+    
+    func getEmails(forSearchQuery query: String, completion: @escaping (_ users: [String]) -> ()){
+        
+        var emailsArray = [String]()
+        
+        REF_USERS.observeSingleEvent(of: .value, with: { (usersSnapshot) in
+            
+            guard let userSnapshot = usersSnapshot.children.allObjects as? [DataSnapshot] else {
+                return
+            }
+            
+            for user in userSnapshot {
+                let email = user.childSnapshot(forPath: EMAIL_KEY).value as! String
+                
+                if email.contains(query) && email != Auth.auth().currentUser!.email {
+                    emailsArray.append(email)
+                }
+            }
+            
+            completion(emailsArray)
         })
     }
 }

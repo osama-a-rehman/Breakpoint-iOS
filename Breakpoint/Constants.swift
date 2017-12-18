@@ -25,3 +25,4 @@ let UID_KEY: String = "uid"
 
 // REUSE IDENTIFIERS
 let FEED_CELL_IDENTIFIER = "FeedCell"
+let USER_CELL_IDENTIFIER = "UserCell"
