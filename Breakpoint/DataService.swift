@@ -51,4 +51,46 @@ class DataService {
             completion(true)
         }
     }
+    
+    func getAllFeedMessages(completion: @escaping MessageCompletionHandler){
+        
+        REF_FEEDS.observeSingleEvent(of: .value, with: { (feedMessageSnapshot) in
+            
+            guard let feedMessageSnapshot = feedMessageSnapshot.children.allObjects as? [DataSnapshot] else {
+                return
+            }
+            
+            var messageArray = [Message]()
+            
+            for message in feedMessageSnapshot {
+                let content = message.childSnapshot(forPath: MESSAGE_KEY).value as! String
+                
+                let senderId = message.childSnapshot(forPath: UID_KEY).value as! String
+                
+                let message = Message(msgContent: content, senderId: senderId)
+                
+                messageArray.append(message)
+            }
+            
+            completion(messageArray)
+        })
+    }
+    
+    func getEmail(forUID uid: String, completion: @escaping (_ email: String) -> ()){
+        REF_USERS.observeSingleEvent(of: .value, with: { (userSnapshot) in
+            
+            guard let userSnapshot = userSnapshot.children.allObjects as? [DataSnapshot] else {
+                return
+            }
+            
+            for user in userSnapshot {
+                if user.key == uid {
+                    let email = user.childSnapshot(forPath: EMAIL_KEY).value as! String
+                    
+                    completion(email)
+                    return
+                }
+            }
+        })
+    }
 }

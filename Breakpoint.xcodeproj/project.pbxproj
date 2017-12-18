@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A1460291FE7FEBF0058BFCB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1460281FE7FEBF0058BFCB /* Message.swift */; };
+		4A14602B1FE804980058BFCB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14602A1FE804980058BFCB /* FeedCell.swift */; };
 		4A16A8C01FD4706A00718D3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A16A8BF1FD4706A00718D3A /* GoogleService-Info.plist */; };
+		4A3C84A11FE7D56800977A1C /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3C84A01FE7D56800977A1C /* UIViewExt.swift */; };
 		4A4B65EB1FE4DC0F009C5015 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4B65E41FE4DC0F009C5015 /* FirebaseAnalytics.framework */; };
 		4A4B65EC1FE4DC0F009C5015 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4B65E51FE4DC0F009C5015 /* FirebaseCore.framework */; };
 		4A4B65ED1FE4DC0F009C5015 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4B65E61FE4DC0F009C5015 /* FirebaseCoreDiagnostics.framework */; };
@@ -38,7 +41,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A1460281FE7FEBF0058BFCB /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		4A14602A1FE804980058BFCB /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		4A16A8BF1FD4706A00718D3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4A3C84A01FE7D56800977A1C /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		4A4B65E41FE4DC0F009C5015 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		4A4B65E51FE4DC0F009C5015 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
 		4A4B65E61FE4DC0F009C5015 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
@@ -115,6 +121,7 @@
 		4A82290E1FDA9CDB002D3B59 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4A3C84A01FE7D56800977A1C /* UIViewExt.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -183,6 +190,7 @@
 				4AD52F451FE55DB20014079A /* InsetTextField.swift */,
 				4AD52F471FE560EE0014079A /* ShadowView.swift */,
 				4AFE2CAD1FE6856400B29BC4 /* BorderedButton.swift */,
+				4A14602A1FE804980058BFCB /* FeedCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -190,6 +198,7 @@
 		4A8E9D851FD46C5E003DA857 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4A1460281FE7FEBF0058BFCB /* Message.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -275,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A3C84A11FE7D56800977A1C /* UIViewExt.swift in Sources */,
 				4A4B65FE1FE4E06E009C5015 /* AuthVC.swift in Sources */,
 				4A8E9D721FD46C05003DA857 /* AppDelegate.swift in Sources */,
 				4AFE2CB01FE688F700B29BC4 /* CreatePostVC.swift in Sources */,
@@ -286,6 +296,8 @@
 				4AD52F481FE560EE0014079A /* ShadowView.swift in Sources */,
 				4A8229111FDA9CEF002D3B59 /* DataService.swift in Sources */,
 				4AD52F461FE55DB20014079A /* InsetTextField.swift in Sources */,
+				4A1460291FE7FEBF0058BFCB /* Message.swift in Sources */,
+				4A14602B1FE804980058BFCB /* FeedCell.swift in Sources */,
 				4AFE2CAC1FE681EA00B29BC4 /* ProfileVC.swift in Sources */,
 				4A4B65FC1FE4E062009C5015 /* LoginVC.swift in Sources */,
 			);

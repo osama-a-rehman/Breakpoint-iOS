@@ -12,6 +12,9 @@ typealias CompletionHandler = (_ status: Bool,_ error: Error?) -> ()
 
 typealias PostCompletionHandler = (_ status: Bool) -> ()
 
+typealias MessageCompletionHandler = (_ messages: [Message]) -> ()
+
+
 // USER REGISTRATION DICTIONARY KEYS
 let PROVIDER_KEY: String = "provider"
 let EMAIL_KEY: String = "email"
@@ -19,3 +22,6 @@ let EMAIL_KEY: String = "email"
 // POST CREATION DICTIONARY KEYS
 let MESSAGE_KEY: String = "message"
 let UID_KEY: String = "uid"
+
+// REUSE IDENTIFIERS
+let FEED_CELL_IDENTIFIER = "FeedCell"

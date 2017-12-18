@@ -26,15 +26,27 @@ class CreatePostVC: UIViewController {
         super.viewDidLoad()
 
         messageTextView.delegate = self
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped(recognizer:)))
+        
+        tapGesture.numberOfTapsRequired = 1
+        self.view.addGestureRecognizer(tapGesture)
+        
+        btnSend.bindToKeyboard()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        emailLabel.text = Auth.auth().currentUser!.email
+    }
     
     @IBAction func btnClosePressed(_ sender: AnyObject) {
         self.dismiss(animated: true, completion: nil)
     }
 
     @IBAction func btnSendPressed(_ sender: AnyObject) {
-        if messageTextView.text != nil && messageTextView.text.caseInsensitiveCompare("Say something here...") != ComparisonResult.orderedSame {
+        if messageTextView.text != nil && messageTextView.text.caseInsensitiveCompare("Say something here...") != ComparisonResult.orderedSame && messageTextView.text != "" {
             
             btnSend.isEnabled = false
             
@@ -45,12 +57,16 @@ class CreatePostVC: UIViewController {
                 if success {
                     print("Post uploaded successfully")
                     self.btnSend.isEnabled = true
-                    
+                    self.view.endEditing(true)
                     self.dismiss(animated: true, completion: nil)
                 }
             })
             
         }
+    }
+    
+    func viewTapped(recognizer: UITapGestureRecognizer){
+        self.view.endEditing(true)
     }
 }
 
