@@ -116,4 +116,70 @@ class DataService {
             completion(emailsArray)
         })
     }
+    
+    func getUserIds(forEmails emailsArray: [String], completion: @escaping (_ userIds: [String]) -> ()){
+        
+        var userIdsArray = [String]()
+        
+        REF_USERS.observe(.value, with: { (usersSnapshot) in
+            guard let usersSnapshot = usersSnapshot.children.allObjects as? [DataSnapshot] else {
+                return
+            }
+        
+            for user in usersSnapshot {
+                let email = user.childSnapshot(forPath: EMAIL_KEY).value as! String
+                
+                if emailsArray.contains(email) {
+                    userIdsArray.append(user.key)
+                }
+            }
+            
+            completion(userIdsArray)
+        })
+    }
+    
+    func createGroup(withTitle title: String, andDescription desc: String, withUserIds usersIds: [String], completion: @escaping (_ success: Bool) -> ()){
+        
+        REF_GROUPS.childByAutoId().updateChildValues([TITLE_KEY: title, DESCRIPTION_KEY: desc, GROUP_MEMBERS_KEY: usersIds])
+        
+        completion(true)
+    }
+    
+    func getGroups(completion: @escaping ([Group]) -> ()){
+        var groupsArray = [Group]()
+        
+        REF_GROUPS.observeSingleEvent(of: .value, with: { (groupsSnapshot) in
+        
+            guard let groupsSnapshot = groupsSnapshot.children.allObjects as? [DataSnapshot] else {
+                return
+            }
+            
+            for group in groupsSnapshot {
+                let groupMembersArray = group.childSnapshot(forPath: GROUP_MEMBERS_KEY).value as! [String]
+                
+                if groupMembersArray.contains(Auth.auth().currentUser!.uid) {
+                    
+                    //print("Group Members Array: \(groupMembersArray)")
+                    
+                    //print("Current UID: \(Auth.auth().currentUser!.uid)")
+                    
+                    let id = group.key
+                    let groupTitle = group.childSnapshot(forPath: TITLE_KEY).value as! String
+                    let groupDescription = group.childSnapshot(forPath: DESCRIPTION_KEY).value as! String
+                    
+                    let groupMembersCount = groupMembersArray.count
+                    
+                    let group = Group(_id: id, _title: groupTitle, _description: groupDescription, _memberCount: groupMembersCount, _membersArray: groupMembersArray)
+                    
+                    groupsArray.append(group)
+                    
+                    //print("groupMembersCount: \(groupMembersCount)")
+                }
+                
+                
+            }
+            
+            completion(groupsArray)
+        })
+    }
 }

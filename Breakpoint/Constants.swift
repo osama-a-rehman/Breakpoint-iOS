@@ -23,6 +23,12 @@ let EMAIL_KEY: String = "email"
 let MESSAGE_KEY: String = "message"
 let UID_KEY: String = "uid"
 
+// POST CREATION DICTIONARY KEYS
+let TITLE_KEY: String = "title"
+let DESCRIPTION_KEY: String = "description"
+let GROUP_MEMBERS_KEY: String = "members"
+
 // REUSE IDENTIFIERS
 let FEED_CELL_IDENTIFIER = "FeedCell"
 let USER_CELL_IDENTIFIER = "UserCell"
+let GROUP_CELL_IDENTIFIER = "GroupCell"
