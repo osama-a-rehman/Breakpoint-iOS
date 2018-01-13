@@ -43,7 +43,11 @@ class DataService {
     func createPost(withMessage message: String, forUID uid: String, withGroupKey groupKey: String?, completion: @escaping PostCompletionHandler){
         
         if groupKey != nil {
-            // manage group reference
+            let feedData = [MESSAGE_KEY: message, UID_KEY: uid]
+            
+            REF_GROUPS.child(groupKey!).child(FIR_MESSAGE_IDENTIFIER).childByAutoId().updateChildValues(feedData)
+            
+            completion(true)
         }else{
             let feedData = [MESSAGE_KEY: message, UID_KEY: uid]
             
@@ -73,6 +77,38 @@ class DataService {
                 messageArray.append(message)
             }
             
+            completion(messageArray)
+        })
+    }
+    
+    func getAllFeedMessagesFor(desiredGroup group: Group, completion: @escaping (_ messagesArray: [Message]) -> ()){
+        
+        var messageArray = [Message]()
+        
+        REF_GROUPS.child(group.id).child(FIR_MESSAGE_IDENTIFIER).observeSingleEvent(of: .value, with: { (groupMessagesSnapshot) in
+            
+            //print("1")
+            
+            guard let groupMessagesSnapshot = groupMessagesSnapshot.children.allObjects as? [DataSnapshot] else {
+                return
+            }
+            
+            //print("2")
+            
+            //var i=0
+            
+            for groupMessage in groupMessagesSnapshot {
+                let messageContent = groupMessage.childSnapshot(forPath: MESSAGE_KEY).value as! String
+                let userUID = groupMessage.childSnapshot(forPath: UID_KEY).value as! String
+                
+                let groupMessage = Message(msgContent: messageContent, senderId: userUID)
+                
+                messageArray.append(groupMessage)
+                
+                //print(messageArray[i].msgContent)
+                //i += 1
+            }
+        
             completion(messageArray)
         })
     }

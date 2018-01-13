@@ -39,6 +39,9 @@
 		4AD52F481FE560EE0014079A /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52F471FE560EE0014079A /* ShadowView.swift */; };
 		4AD52F4A1FE5627C0014079A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52F491FE5627C0014079A /* AuthService.swift */; };
 		4AD52F4E1FE564970014079A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD52F4D1FE564970014079A /* Constants.swift */; };
+		4AE2594F200AAED2007799B9 /* GroupFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE2594E200AAED2007799B9 /* GroupFeedCell.swift */; };
+		4AE25951200AB04B007799B9 /* GroupsFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE25950200AB04B007799B9 /* GroupsFeedVC.swift */; };
+		4AE25953200AC1D9007799B9 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE25952200AC1D9007799B9 /* UIViewControllerExt.swift */; };
 		4AFE2CAC1FE681EA00B29BC4 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFE2CAB1FE681EA00B29BC4 /* ProfileVC.swift */; };
 		4AFE2CAE1FE6856400B29BC4 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFE2CAD1FE6856400B29BC4 /* BorderedButton.swift */; };
 		4AFE2CB01FE688F700B29BC4 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFE2CAF1FE688F700B29BC4 /* CreatePostVC.swift */; };
@@ -80,6 +83,9 @@
 		4AD52F471FE560EE0014079A /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		4AD52F491FE5627C0014079A /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		4AD52F4D1FE564970014079A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4AE2594E200AAED2007799B9 /* GroupFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupFeedCell.swift; sourceTree = "<group>"; };
+		4AE25950200AB04B007799B9 /* GroupsFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsFeedVC.swift; sourceTree = "<group>"; };
+		4AE25952200AC1D9007799B9 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		4AFE2CAB1FE681EA00B29BC4 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		4AFE2CAD1FE6856400B29BC4 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		4AFE2CAF1FE688F700B29BC4 /* CreatePostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				4A3C84A01FE7D56800977A1C /* UIViewExt.swift */,
+				4AE25952200AC1D9007799B9 /* UIViewControllerExt.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -189,6 +196,7 @@
 				4AFE2CAB1FE681EA00B29BC4 /* ProfileVC.swift */,
 				4AFE2CAF1FE688F700B29BC4 /* CreatePostVC.swift */,
 				4A14602C1FE8125F0058BFCB /* CreateGroupVC.swift */,
+				4AE25950200AB04B007799B9 /* GroupsFeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -202,6 +210,7 @@
 				4A14602A1FE804980058BFCB /* FeedCell.swift */,
 				4A14602E1FE814BD0058BFCB /* UserCell.swift */,
 				4A5FA1821FE964B000B19CC1 /* GroupCell.swift */,
+				4AE2594E200AAED2007799B9 /* GroupFeedCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -296,12 +305,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE2594F200AAED2007799B9 /* GroupFeedCell.swift in Sources */,
 				4A3C84A11FE7D56800977A1C /* UIViewExt.swift in Sources */,
+				4AE25951200AB04B007799B9 /* GroupsFeedVC.swift in Sources */,
 				4A4B65FE1FE4E06E009C5015 /* AuthVC.swift in Sources */,
 				4A5FA1831FE964B000B19CC1 /* GroupCell.swift in Sources */,
 				4A5FA1851FE9672600B19CC1 /* Group.swift in Sources */,
 				4A8E9D721FD46C05003DA857 /* AppDelegate.swift in Sources */,
 				4AFE2CB01FE688F700B29BC4 /* CreatePostVC.swift in Sources */,
+				4AE25953200AC1D9007799B9 /* UIViewControllerExt.swift in Sources */,
 				4AFE2CAE1FE6856400B29BC4 /* BorderedButton.swift in Sources */,
 				4A14602D1FE8125F0058BFCB /* CreateGroupVC.swift in Sources */,
 				4A8E9D891FD46C9B003DA857 /* GroupsVC.swift in Sources */,

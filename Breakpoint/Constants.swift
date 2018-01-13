@@ -32,3 +32,7 @@ let GROUP_MEMBERS_KEY: String = "members"
 let FEED_CELL_IDENTIFIER = "FeedCell"
 let USER_CELL_IDENTIFIER = "UserCell"
 let GROUP_CELL_IDENTIFIER = "GroupCell"
+let GROUP_FEED_CELL_IDENTIFIER = "GroupFeedCell"
+
+//FIREBASE IDENTIFIERS
+let FIR_MESSAGE_IDENTIFIER = "messages"
